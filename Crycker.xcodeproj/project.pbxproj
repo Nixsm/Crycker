@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E107820F2040E194006A3DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107820E2040E194006A3DF6 /* AppDelegate.swift */; };
-		E10782112040E194006A3DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782102040E194006A3DF6 /* ViewController.swift */; };
-		E10782142040E194006A3DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10782122040E194006A3DF6 /* Main.storyboard */; };
 		E10782162040E194006A3DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10782152040E194006A3DF6 /* Assets.xcassets */; };
 		E10782192040E194006A3DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10782172040E194006A3DF6 /* LaunchScreen.storyboard */; };
 		E10782242040E194006A3DF6 /* CryckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782232040E194006A3DF6 /* CryckerTests.swift */; };
+		E10782602040E51C006A3DF6 /* MainViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107825F2040E51C006A3DF6 /* MainViewControler.swift */; };
+		E10782622040E526006A3DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10782612040E526006A3DF6 /* Main.storyboard */; };
+		E10782642040E53C006A3DF6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782632040E53C006A3DF6 /* MainViewModel.swift */; };
+		E10782672040E59E006A3DF6 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782662040E59E006A3DF6 /* CoordinatorType.swift */; };
+		E10782692040E5CE006A3DF6 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782682040E5CE006A3DF6 /* Transition.swift */; };
+		E107826B2040E5FF006A3DF6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107826A2040E5FF006A3DF6 /* MainCoordinator.swift */; };
+		E107826D2040E655006A3DF6 /* Transitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107826C2040E655006A3DF6 /* Transitionable.swift */; };
+		E10782702040E6BC006A3DF6 /* CoinMarketCapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107826F2040E6BC006A3DF6 /* CoinMarketCapRepository.swift */; };
+		E10782722040E776006A3DF6 /* CryptoCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782712040E776006A3DF6 /* CryptoCoin.swift */; };
+		E10782742040E9BC006A3DF6 /* CoinMarketCapApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782732040E9BC006A3DF6 /* CoinMarketCapApiRepository.swift */; };
+		E10782772040EA2D006A3DF6 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782762040EA2D006A3DF6 /* Endpoints.swift */; };
+		E10782792040EE3B006A3DF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782782040EE3B006A3DF6 /* Constants.swift */; };
+		E1BF82442041107500510FDE /* CoinMarketCapURLSessionDelegateImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82432041107500510FDE /* CoinMarketCapURLSessionDelegateImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +39,25 @@
 /* Begin PBXFileReference section */
 		E107820B2040E194006A3DF6 /* Crycker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crycker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E107820E2040E194006A3DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E10782102040E194006A3DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E10782132040E194006A3DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E10782152040E194006A3DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10782182040E194006A3DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E107821A2040E194006A3DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E107821F2040E194006A3DF6 /* CryckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10782232040E194006A3DF6 /* CryckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryckerTests.swift; sourceTree = "<group>"; };
 		E10782252040E194006A3DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E107825F2040E51C006A3DF6 /* MainViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControler.swift; sourceTree = "<group>"; };
+		E10782612040E526006A3DF6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E10782632040E53C006A3DF6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E10782662040E59E006A3DF6 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		E10782682040E5CE006A3DF6 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		E107826A2040E5FF006A3DF6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		E107826C2040E655006A3DF6 /* Transitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitionable.swift; sourceTree = "<group>"; };
+		E107826F2040E6BC006A3DF6 /* CoinMarketCapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapRepository.swift; sourceTree = "<group>"; };
+		E10782712040E776006A3DF6 /* CryptoCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoin.swift; sourceTree = "<group>"; };
+		E10782732040E9BC006A3DF6 /* CoinMarketCapApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapApiRepository.swift; sourceTree = "<group>"; };
+		E10782762040EA2D006A3DF6 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		E10782782040EE3B006A3DF6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E1BF82432041107500510FDE /* CoinMarketCapURLSessionDelegateImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapURLSessionDelegateImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +99,15 @@
 		E107820D2040E194006A3DF6 /* Crycker */ = {
 			isa = PBXGroup;
 			children = (
+				E1BF824120410F7300510FDE /* Networking */,
+				E10782652040E58E006A3DF6 /* Coordinator */,
+				E107822F2040E1FA006A3DF6 /* Models */,
+				E107822E2040E1F3006A3DF6 /* Modules */,
 				E107820E2040E194006A3DF6 /* AppDelegate.swift */,
-				E10782102040E194006A3DF6 /* ViewController.swift */,
-				E10782122040E194006A3DF6 /* Main.storyboard */,
 				E10782152040E194006A3DF6 /* Assets.xcassets */,
 				E10782172040E194006A3DF6 /* LaunchScreen.storyboard */,
 				E107821A2040E194006A3DF6 /* Info.plist */,
+				E10782782040EE3B006A3DF6 /* Constants.swift */,
 			);
 			path = Crycker;
 			sourceTree = "<group>";
@@ -94,6 +119,78 @@
 				E10782252040E194006A3DF6 /* Info.plist */,
 			);
 			path = CryckerTests;
+			sourceTree = "<group>";
+		};
+		E107822E2040E1F3006A3DF6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E107825C2040E4EA006A3DF6 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E107822F2040E1FA006A3DF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E10782712040E776006A3DF6 /* CryptoCoin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E107825C2040E4EA006A3DF6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E107826A2040E5FF006A3DF6 /* MainCoordinator.swift */,
+				E10782632040E53C006A3DF6 /* MainViewModel.swift */,
+				E107825F2040E51C006A3DF6 /* MainViewControler.swift */,
+				E10782612040E526006A3DF6 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E10782652040E58E006A3DF6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E10782662040E59E006A3DF6 /* CoordinatorType.swift */,
+				E10782682040E5CE006A3DF6 /* Transition.swift */,
+				E107826C2040E655006A3DF6 /* Transitionable.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E107826E2040E699006A3DF6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E107826F2040E6BC006A3DF6 /* CoinMarketCapRepository.swift */,
+				E10782732040E9BC006A3DF6 /* CoinMarketCapApiRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E10782752040EA27006A3DF6 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				E10782762040EA2D006A3DF6 /* Endpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		E1BF824120410F7300510FDE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E1BF82422041106C00510FDE /* Delegates */,
+				E10782752040EA27006A3DF6 /* Endpoints */,
+				E107826E2040E699006A3DF6 /* Repositories */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E1BF82422041106C00510FDE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E1BF82432041107500510FDE /* CoinMarketCapURLSessionDelegateImplementation.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +244,11 @@
 					E107820A2040E194006A3DF6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					E107821E2040E194006A3DF6 = {
 						CreatedOnToolsVersion = 9.2;
@@ -179,9 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10782622040E526006A3DF6 /* Main.storyboard in Resources */,
 				E10782192040E194006A3DF6 /* LaunchScreen.storyboard in Resources */,
 				E10782162040E194006A3DF6 /* Assets.xcassets in Resources */,
-				E10782142040E194006A3DF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +301,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10782112040E194006A3DF6 /* ViewController.swift in Sources */,
+				E10782692040E5CE006A3DF6 /* Transition.swift in Sources */,
+				E10782702040E6BC006A3DF6 /* CoinMarketCapRepository.swift in Sources */,
+				E107826B2040E5FF006A3DF6 /* MainCoordinator.swift in Sources */,
+				E10782602040E51C006A3DF6 /* MainViewControler.swift in Sources */,
 				E107820F2040E194006A3DF6 /* AppDelegate.swift in Sources */,
+				E10782722040E776006A3DF6 /* CryptoCoin.swift in Sources */,
+				E10782672040E59E006A3DF6 /* CoordinatorType.swift in Sources */,
+				E10782642040E53C006A3DF6 /* MainViewModel.swift in Sources */,
+				E10782742040E9BC006A3DF6 /* CoinMarketCapApiRepository.swift in Sources */,
+				E107826D2040E655006A3DF6 /* Transitionable.swift in Sources */,
+				E10782772040EA2D006A3DF6 /* Endpoints.swift in Sources */,
+				E1BF82442041107500510FDE /* CoinMarketCapURLSessionDelegateImplementation.swift in Sources */,
+				E10782792040EE3B006A3DF6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +336,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E10782122040E194006A3DF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E10782132040E194006A3DF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E10782172040E194006A3DF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.nixsm.Crycker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -375,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.nixsm.Crycker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
