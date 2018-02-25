@@ -32,7 +32,6 @@
 		E1BF82642042529700510FDE /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82632042529700510FDE /* UITableView.swift */; };
 		E1BF827A2042FDE200510FDE /* CoinDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82712042FDE200510FDE /* CoinDetailPresenter.swift */; };
 		E1BF827B2042FDE200510FDE /* CoinDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82732042FDE200510FDE /* CoinDetailContract.swift */; };
-		E1BF827C2042FDE200510FDE /* CoinDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82752042FDE200510FDE /* CoinDetailInteractor.swift */; };
 		E1BF827D2042FDE200510FDE /* CoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82772042FDE200510FDE /* CoinDetailViewController.swift */; };
 		E1BF827E2042FDE200510FDE /* CoinDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82792042FDE200510FDE /* CoinDetailRouter.swift */; };
 		E1BF82802042FE1B00510FDE /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF827F2042FE1B00510FDE /* UIStoryboard.swift */; };
@@ -78,7 +77,6 @@
 		E1BF82632042529700510FDE /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		E1BF82712042FDE200510FDE /* CoinDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailPresenter.swift; sourceTree = "<group>"; };
 		E1BF82732042FDE200510FDE /* CoinDetailContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailContract.swift; sourceTree = "<group>"; };
-		E1BF82752042FDE200510FDE /* CoinDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailInteractor.swift; sourceTree = "<group>"; };
 		E1BF82772042FDE200510FDE /* CoinDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailViewController.swift; sourceTree = "<group>"; };
 		E1BF82792042FDE200510FDE /* CoinDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailRouter.swift; sourceTree = "<group>"; };
 		E1BF827F2042FE1B00510FDE /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
@@ -284,7 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				E1BF82722042FDE200510FDE /* Contract */,
-				E1BF82742042FDE200510FDE /* Interactor */,
 				E1BF82702042FDE200510FDE /* Presenter */,
 				E1BF82782042FDE200510FDE /* Router */,
 				E1BF82762042FDE200510FDE /* View */,
@@ -306,14 +303,6 @@
 				E1BF82732042FDE200510FDE /* CoinDetailContract.swift */,
 			);
 			path = Contract;
-			sourceTree = "<group>";
-		};
-		E1BF82742042FDE200510FDE /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				E1BF82752042FDE200510FDE /* CoinDetailInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		E1BF82762042FDE200510FDE /* View */ = {
@@ -454,7 +443,6 @@
 				E1BF82802042FE1B00510FDE /* UIStoryboard.swift in Sources */,
 				E107820F2040E194006A3DF6 /* AppDelegate.swift in Sources */,
 				E1BF82622042526900510FDE /* ReusableView.swift in Sources */,
-				E1BF827C2042FDE200510FDE /* CoinDetailInteractor.swift in Sources */,
 				E1BF82522041C39500510FDE /* MainPresenter.swift in Sources */,
 				E1BF827A2042FDE200510FDE /* CoinDetailPresenter.swift in Sources */,
 				E10782722040E776006A3DF6 /* CryptoCoin.swift in Sources */,

@@ -14,7 +14,6 @@ class CoinDetailPresenter {
 
     weak var view: CoinDetailView?
     var router: CoinDetailWireframe?
-    var interactor: CoinDetailUseCase?
     var coin: CryptoCoin?
 }
 
@@ -23,8 +22,4 @@ extension CoinDetailPresenter: CoinDetailPresentation {
         guard let coin = coin else { return }
         view?.setupView(with: coin)
     }
-}
-
-extension CoinDetailPresenter: CoinDetailInteractorOutput {
-    // TODO: implement interactor output methods
 }
