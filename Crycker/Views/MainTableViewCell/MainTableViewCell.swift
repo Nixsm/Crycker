@@ -17,14 +17,6 @@ class MainTableViewCell: UITableViewCell, NibLoadable, ReusableView {
     func bind(with coin: CryptoCoin) {
         symbolLabel.text = coin.symbol
         nameLabel.text = coin.name
-        // TODO maybe format this
-        
-        guard let marketCapUSD = Double(coin.marketCapUSD ?? "") else { return }
-        let currencyFormatter = NumberFormatter()
-        currencyFormatter.numberStyle = .currency
-        currencyFormatter.currencyCode = "USD"
-        let convertedPrice = currencyFormatter.string(from: NSNumber(floatLiteral: marketCapUSD))
-
-        marketCapLabel.text = convertedPrice
+        marketCapLabel.text = coin.priceUSD?.asUsdCurrency
     }
 }
