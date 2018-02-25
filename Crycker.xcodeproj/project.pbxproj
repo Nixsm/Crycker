@@ -10,7 +10,6 @@
 		E107820F2040E194006A3DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107820E2040E194006A3DF6 /* AppDelegate.swift */; };
 		E10782162040E194006A3DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10782152040E194006A3DF6 /* Assets.xcassets */; };
 		E10782192040E194006A3DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10782172040E194006A3DF6 /* LaunchScreen.storyboard */; };
-		E10782242040E194006A3DF6 /* CryckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10782232040E194006A3DF6 /* CryckerTests.swift */; };
 		E10782602040E51C006A3DF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107825F2040E51C006A3DF6 /* MainViewController.swift */; };
 		E10782622040E526006A3DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10782612040E526006A3DF6 /* Main.storyboard */; };
 		E10782702040E6BC006A3DF6 /* CoinMarketCapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107826F2040E6BC006A3DF6 /* CoinMarketCapRepository.swift */; };
@@ -21,6 +20,16 @@
 		E1097DA12042FE8B00E9C20D /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DA02042FE8B00E9C20D /* StoryboardLoadable.swift */; };
 		E1097DA32043007000E9C20D /* CoinDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1097DA22043007000E9C20D /* CoinDetail.storyboard */; };
 		E1097DA520431C9600E9C20D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DA420431C9600E9C20D /* String.swift */; };
+		E1097DA92043254500E9C20D /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DA82043254500E9C20D /* MainPresenterTests.swift */; };
+		E1097DAB204325A000E9C20D /* MockMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DAA204325A000E9C20D /* MockMainInteractor.swift */; };
+		E1097DAD204326B600E9C20D /* MockMainInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DAC204326B600E9C20D /* MockMainInteractorOutput.swift */; };
+		E1097DB0204326E800E9C20D /* MockMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DAF204326E800E9C20D /* MockMainView.swift */; };
+		E1097DB22043273900E9C20D /* MockMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DB12043273900E9C20D /* MockMainRouter.swift */; };
+		E1097DB42043276000E9C20D /* MockMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DB32043276000E9C20D /* MockMainPresenter.swift */; };
+		E1097DB62043291200E9C20D /* MainInteractorSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DB52043291200E9C20D /* MainInteractorSuccessTests.swift */; };
+		E1097DB92043298100E9C20D /* MockCoinMarketCapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DB82043298100E9C20D /* MockCoinMarketCapRepository.swift */; };
+		E1097DBB20432D5100E9C20D /* MainInteractorFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DBA20432D5100E9C20D /* MainInteractorFailureTests.swift */; };
+		E1097DBD20432DB500E9C20D /* MainViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1097DBC20432DB500E9C20D /* MainViewTests.swift */; };
 		E1BF824F2041C38800510FDE /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF824E2041C38800510FDE /* MainContract.swift */; };
 		E1BF82522041C39500510FDE /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82512041C39500510FDE /* MainPresenter.swift */; };
 		E1BF82542041C39C00510FDE /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF82532041C39C00510FDE /* MainInteractor.swift */; };
@@ -54,7 +63,6 @@
 		E10782182040E194006A3DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E107821A2040E194006A3DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E107821F2040E194006A3DF6 /* CryckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10782232040E194006A3DF6 /* CryckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryckerTests.swift; sourceTree = "<group>"; };
 		E10782252040E194006A3DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E107825F2040E51C006A3DF6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E10782612040E526006A3DF6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +74,16 @@
 		E1097DA02042FE8B00E9C20D /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
 		E1097DA22043007000E9C20D /* CoinDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoinDetail.storyboard; sourceTree = "<group>"; };
 		E1097DA420431C9600E9C20D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E1097DA82043254500E9C20D /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
+		E1097DAA204325A000E9C20D /* MockMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainInteractor.swift; sourceTree = "<group>"; };
+		E1097DAC204326B600E9C20D /* MockMainInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainInteractorOutput.swift; sourceTree = "<group>"; };
+		E1097DAF204326E800E9C20D /* MockMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainView.swift; sourceTree = "<group>"; };
+		E1097DB12043273900E9C20D /* MockMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainRouter.swift; sourceTree = "<group>"; };
+		E1097DB32043276000E9C20D /* MockMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainPresenter.swift; sourceTree = "<group>"; };
+		E1097DB52043291200E9C20D /* MainInteractorSuccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorSuccessTests.swift; sourceTree = "<group>"; };
+		E1097DB82043298100E9C20D /* MockCoinMarketCapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoinMarketCapRepository.swift; sourceTree = "<group>"; };
+		E1097DBA20432D5100E9C20D /* MainInteractorFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorFailureTests.swift; sourceTree = "<group>"; };
+		E1097DBC20432DB500E9C20D /* MainViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTests.swift; sourceTree = "<group>"; };
 		E1BF824E2041C38800510FDE /* MainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
 		E1BF82512041C39500510FDE /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		E1BF82532041C39C00510FDE /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
@@ -139,7 +157,8 @@
 		E10782222040E194006A3DF6 /* CryckerTests */ = {
 			isa = PBXGroup;
 			children = (
-				E10782232040E194006A3DF6 /* CryckerTests.swift */,
+				E1097DC02043345800E9C20D /* MainModuleTests */,
+				E1097DB72043296A00E9C20D /* RepositoryMocks */,
 				E10782252040E194006A3DF6 /* Info.plist */,
 			);
 			path = CryckerTests;
@@ -199,6 +218,38 @@
 				E1BF82612042526900510FDE /* ReusableView.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E1097DAE204326D300E9C20D /* MainModuleMocks */ = {
+			isa = PBXGroup;
+			children = (
+				E1097DAA204325A000E9C20D /* MockMainInteractor.swift */,
+				E1097DAC204326B600E9C20D /* MockMainInteractorOutput.swift */,
+				E1097DAF204326E800E9C20D /* MockMainView.swift */,
+				E1097DB12043273900E9C20D /* MockMainRouter.swift */,
+				E1097DB32043276000E9C20D /* MockMainPresenter.swift */,
+			);
+			path = MainModuleMocks;
+			sourceTree = "<group>";
+		};
+		E1097DB72043296A00E9C20D /* RepositoryMocks */ = {
+			isa = PBXGroup;
+			children = (
+				E1097DB82043298100E9C20D /* MockCoinMarketCapRepository.swift */,
+			);
+			path = RepositoryMocks;
+			sourceTree = "<group>";
+		};
+		E1097DC02043345800E9C20D /* MainModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1097DAE204326D300E9C20D /* MainModuleMocks */,
+				E1097DA82043254500E9C20D /* MainPresenterTests.swift */,
+				E1097DB52043291200E9C20D /* MainInteractorSuccessTests.swift */,
+				E1097DBA20432D5100E9C20D /* MainInteractorFailureTests.swift */,
+				E1097DBC20432DB500E9C20D /* MainViewTests.swift */,
+			);
+			path = MainModuleTests;
 			sourceTree = "<group>";
 		};
 		E1BF824120410F7300510FDE /* Networking */ = {
@@ -461,7 +512,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10782242040E194006A3DF6 /* CryckerTests.swift in Sources */,
+				E1097DAD204326B600E9C20D /* MockMainInteractorOutput.swift in Sources */,
+				E1097DB22043273900E9C20D /* MockMainRouter.swift in Sources */,
+				E1097DAB204325A000E9C20D /* MockMainInteractor.swift in Sources */,
+				E1097DB42043276000E9C20D /* MockMainPresenter.swift in Sources */,
+				E1097DB0204326E800E9C20D /* MockMainView.swift in Sources */,
+				E1097DBD20432DB500E9C20D /* MainViewTests.swift in Sources */,
+				E1097DB92043298100E9C20D /* MockCoinMarketCapRepository.swift in Sources */,
+				E1097DA92043254500E9C20D /* MainPresenterTests.swift in Sources */,
+				E1097DBB20432D5100E9C20D /* MainInteractorFailureTests.swift in Sources */,
+				E1097DB62043291200E9C20D /* MainInteractorSuccessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

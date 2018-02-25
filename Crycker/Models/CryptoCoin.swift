@@ -42,6 +42,8 @@ class CryptoCoin: Codable {
     var percentChange7d: String?
     var lastUpdated: Date?
     
+    init() {}
+    
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         

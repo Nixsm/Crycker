@@ -23,17 +23,11 @@ class MainInteractor {
 
 extension MainInteractor: MainUseCase {
     func fetchCryptoCoins() {
-        DispatchQueue.global(qos: .userInteractive).async {
-            self.repository
-                .fetchCryptoCoins(onSuccess: { coins in
-                    DispatchQueue.main.async {
-                        self.output?.onFetchCryptoCoinsSuccess(with: coins)
-                    }
-                }) { error in
-                    DispatchQueue.main.async {
-                        self.output?.onFetchCryptoCoinsFailure(with: error)
-                    }
-            }
+        self.repository
+            .fetchCryptoCoins(onSuccess: { coins in
+                self.output?.onFetchCryptoCoinsSuccess(with: coins)
+            }) { error in
+                self.output?.onFetchCryptoCoinsFailure(with: error)
         }
     }
 }

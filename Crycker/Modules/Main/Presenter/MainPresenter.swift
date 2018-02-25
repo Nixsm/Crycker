@@ -32,6 +32,6 @@ extension MainPresenter: MainInteractorOutput {
     }
     
     func onFetchCryptoCoinsFailure(with error: String) {
-        view?.showMessageDialog(with: error, title: "Error")
+        view?.showErrorDialog(with: error, title: "Error")
     }
 }

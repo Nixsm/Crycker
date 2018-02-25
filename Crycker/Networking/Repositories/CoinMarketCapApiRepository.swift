@@ -19,24 +19,32 @@ class CoinMarketCapApiRepository: CoinMarketCapRepository {
             onFailure?("Ops! An error has occurred. Try again later!")
             return
         }
-        dataTask?.cancel()
-
-        let request = URLRequest(url: url, cachePolicy: .reloadRevalidatingCacheData, timeoutInterval: Constants.Requests.defaultTimeout)
-
-        dataTask = defaultSession.dataTask(with: request) { (data, httpResponse, error) in
-            defer { self.dataTask = nil }
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.dataTask?.cancel()
             
-            guard
-                let data = data,
-                let response = httpResponse as? HTTPURLResponse,
-                response.statusCode == 200,
-                let coins = try? JSONDecoder().decode([CryptoCoin].self, from: data) else {
-                    onFailure?("Ops! An error has occurred. Try again later!")
-                    return
+            let request = URLRequest(url: url, cachePolicy: .reloadRevalidatingCacheData, timeoutInterval: Constants.Requests.defaultTimeout)
+            
+            self.dataTask = self.defaultSession.dataTask(with: request) { (data, httpResponse, error) in
+                defer { self.dataTask = nil }
+                
+                guard
+                    let data = data,
+                    let response = httpResponse as? HTTPURLResponse,
+                    response.statusCode == 200,
+                    let coins = try? JSONDecoder().decode([CryptoCoin].self, from: data) else {
+                        DispatchQueue.main.async {
+                            onFailure?("Ops! An error has occurred. Try again later!")
+                        }
+                        return
+                }
+                
+                DispatchQueue.main.async {
+                    onSuccess(coins)
+                }
             }
-            
-            onSuccess(coins)
+        
+            self.dataTask?.resume()
         }
-        dataTask?.resume()
     }
 }

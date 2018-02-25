@@ -52,19 +52,11 @@ private extension MainViewController {
 }
 
 extension MainViewController: MainView {
-    func showLoading() {
-        // TODO
-    }
-    
-    func dismissLoading() {
-        // TODO
-    }
-    
     func showCoins(with coins: [CryptoCoin]) {
         self.coins = coins
     }
     
-    func showMessageDialog(with text: String, title: String) {
+    func showErrorDialog(with text: String, title: String) {
         // TODO
     }
 }

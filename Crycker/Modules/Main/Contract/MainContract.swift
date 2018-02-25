@@ -9,10 +9,8 @@
 import Foundation
 
 protocol MainView: class {
-    func showLoading()
-    func dismissLoading()
     func showCoins(with coins: [CryptoCoin])
-    func showMessageDialog(with text: String, title: String)
+    func showErrorDialog(with text: String, title: String)
 }
 
 protocol MainPresentation: class {
