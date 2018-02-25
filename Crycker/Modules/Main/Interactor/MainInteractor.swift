@@ -24,7 +24,7 @@ class MainInteractor {
 extension MainInteractor: MainUseCase {
     func fetchCryptoCoins() {
         self.repository
-            .fetchCryptoCoins(onSuccess: { coins in
+            .fetchCryptoCoins(shouldReloadCache: false, onSuccess: { coins in
                 self.output?.onFetchCryptoCoinsSuccess(with: coins)
             }) { error in
                 self.output?.onFetchCryptoCoinsFailure(with: error)

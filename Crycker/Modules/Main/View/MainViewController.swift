@@ -57,7 +57,10 @@ extension MainViewController: MainView {
     }
     
     func showErrorDialog(with text: String, title: String) {
-        // TODO
+        let alertController = UIAlertController(title: title, message: text, preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
 }
 

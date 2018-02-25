@@ -14,7 +14,7 @@ class CoinMarketCapApiRepository: CoinMarketCapRepository {
     
     fileprivate let crytoLimit = 10
 
-    func fetchCryptoCoins(onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?) {
+    func fetchCryptoCoins(shouldReloadCache: Bool, onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?) {
         guard let url = Endpoints.ticker(crytoLimit) else {
             onFailure?("Ops! An error has occurred. Try again later!")
             return
@@ -23,8 +23,12 @@ class CoinMarketCapApiRepository: CoinMarketCapRepository {
         DispatchQueue.global(qos: .userInteractive).async {
             self.dataTask?.cancel()
             
-            let request = URLRequest(url: url, cachePolicy: .reloadRevalidatingCacheData, timeoutInterval: Constants.Requests.defaultTimeout)
+            var request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: Constants.Requests.defaultTimeout)
             
+            if shouldReloadCache {
+                request.cachePolicy = .reloadIgnoringLocalCacheData
+            }
+
             self.dataTask = self.defaultSession.dataTask(with: request) { (data, httpResponse, error) in
                 defer { self.dataTask = nil }
                 

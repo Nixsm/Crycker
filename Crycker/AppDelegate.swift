@@ -23,8 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("Reloading cache data")
         DispatchQueue.global(qos: .background).async {
-            CoinMarketCapApiRepository().fetchCryptoCoins(onSuccess: { _ in
+            CoinMarketCapApiRepository().fetchCryptoCoins(shouldReloadCache: true, onSuccess: { _ in
                 completionHandler(.newData)
             }, onFailure: { _ in
                 completionHandler(.failed)
