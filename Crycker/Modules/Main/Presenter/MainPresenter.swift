@@ -20,6 +20,10 @@ extension MainPresenter: MainPresentation {
     func onViewWillAppear() {
         interactor?.fetchCryptoCoins()
     }
+    
+    func onCoinSelected(with coin: CryptoCoin) {
+        router?.openCoinDetail(for: coin)
+    }
 }
 
 extension MainPresenter: MainInteractorOutput {

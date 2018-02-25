@@ -36,5 +36,8 @@ class MainRouter {
 }
 
 extension MainRouter: MainWireFrame {
-    // TODO
+    func openCoinDetail(for coin: CryptoCoin) {
+        let viewController = CoinDetailRouter.setupModule(with: coin)
+        view?.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

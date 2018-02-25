@@ -75,6 +75,10 @@ extension MainViewController: UITableViewDelegate {
         
         cell.bind(with: coins[indexPath.row])
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.onCoinSelected(with: coins[indexPath.row])
+    }
 }
 
 extension MainViewController: UITableViewDataSource {

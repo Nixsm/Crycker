@@ -17,6 +17,7 @@ protocol MainView: class {
 
 protocol MainPresentation: class {
     func onViewWillAppear()
+    func onCoinSelected(with coin: CryptoCoin)
 }
 
 protocol MainUseCase: class {
@@ -29,6 +30,6 @@ protocol MainInteractorOutput: class {
 }
 
 protocol MainWireFrame: class {
-    // TODO
+    func openCoinDetail(for coin: CryptoCoin)
 }
 
