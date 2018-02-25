@@ -12,11 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    fileprivate var firstViewController: UIViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
-        
+        setupFirstModule()
         return true
     }
     
@@ -28,6 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 completionHandler(.failed)
             })
         }
+    }
+    
+    fileprivate func setupFirstModule() {
+        let firstViewController = MainRouter.setupModule()
+        window?.rootViewController = UINavigationController(rootViewController: firstViewController)
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
     }
 }
 
