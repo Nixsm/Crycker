@@ -14,4 +14,4 @@ For the `CryptoCoin` model, I'm using Swift 4 Codable.
 
 ## Run
 
-The app contains no dependencies, simple open up the `.xcodeproj` and run the app.
+The app contains no dependencies, simply open up the `.xcodeproj` and run the app.
