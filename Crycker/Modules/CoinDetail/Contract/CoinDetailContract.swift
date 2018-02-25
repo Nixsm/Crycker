@@ -9,11 +9,11 @@
 import Foundation
 
 protocol CoinDetailView: class {
-    // TODO: Declare view methods
+    func setupView(with coin: CryptoCoin)
 }
 
 protocol CoinDetailPresentation: class {
-    // TODO: Declare presentation methods
+    func onViewDidLoad()
 }
 
 protocol CoinDetailUseCase: class {

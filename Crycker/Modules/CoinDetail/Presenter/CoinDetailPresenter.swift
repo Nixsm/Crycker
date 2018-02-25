@@ -19,7 +19,10 @@ class CoinDetailPresenter {
 }
 
 extension CoinDetailPresenter: CoinDetailPresentation {
-    // TODO: implement presentation methods
+    func onViewDidLoad() {
+        guard let coin = coin else { return }
+        view?.setupView(with: coin)
+    }
 }
 
 extension CoinDetailPresenter: CoinDetailInteractorOutput {
