@@ -4,7 +4,7 @@ A simple app that fetches the top 10 crypto coins from [here](https://coinmarket
 
 ## Considerations
 
-The app was implemented using the VIPER architecture, I've used VIPER because it's my day-to-day architecture and a I didn't want to use dependencies.
+The app was implemented using the VIPER architecture, I've used VIPER because it's my day-to-day architecture and a I didn't want to use any dependency.
 
 I have implemented tests for the main module(the one who display the top 10 cryptos) and decided to not implement tests for the `CoinDetail` Module, since it consists in only display a crypto fetched by the `MainModule`.
 
