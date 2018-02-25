@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CoinMarketCapRepository: class {
-    func fetchCryptoCoins(limit: Int, onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?)
+    func fetchCryptoCoins(onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?)
 }

@@ -11,9 +11,11 @@ import Foundation
 class CoinMarketCapApiRepository: CoinMarketCapRepository {
     fileprivate var defaultSession = URLSession.shared
     fileprivate var dataTask: URLSessionDataTask?
+    
+    fileprivate let crytoLimit = 10
 
-    func fetchCryptoCoins(limit: Int = 10, onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?) {
-        guard let url = Endpoints.ticker(limit) else {
+    func fetchCryptoCoins(onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?) {
+        guard let url = Endpoints.ticker(crytoLimit) else {
             onFailure?("Ops! An error has occurred. Try again later!")
             return
         }
@@ -33,10 +35,7 @@ class CoinMarketCapApiRepository: CoinMarketCapRepository {
                     return
             }
             
-            DispatchQueue.main.async {
-                onSuccess(coins)
-            }
-
+            onSuccess(coins)
         }
         dataTask?.resume()
     }
