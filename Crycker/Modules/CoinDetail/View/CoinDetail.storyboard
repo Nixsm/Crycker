@@ -285,10 +285,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Wxf-Ah-L9e" secondAttribute="trailing" id="635-Y4-9b7"/>
-                            <constraint firstItem="Wxf-Ah-L9e" firstAttribute="leading" secondItem="Bph-s6-P22" secondAttribute="leading" id="M6S-lx-jvK"/>
-                            <constraint firstItem="dwC-1V-aNs" firstAttribute="bottom" secondItem="Wxf-Ah-L9e" secondAttribute="bottom" id="MKE-93-JiV"/>
+                            <constraint firstItem="Wxf-Ah-L9e" firstAttribute="leading" secondItem="dwC-1V-aNs" secondAttribute="leading" id="Bq3-RP-6UG"/>
+                            <constraint firstItem="dwC-1V-aNs" firstAttribute="trailing" secondItem="Wxf-Ah-L9e" secondAttribute="trailing" id="HdP-Kw-FUP"/>
                             <constraint firstItem="Wxf-Ah-L9e" firstAttribute="centerX" secondItem="Bph-s6-P22" secondAttribute="centerX" id="PCJ-fo-j84"/>
+                            <constraint firstItem="Wxf-Ah-L9e" firstAttribute="bottom" secondItem="Bph-s6-P22" secondAttribute="bottom" id="QZX-Mb-Dzi"/>
                             <constraint firstItem="Wxf-Ah-L9e" firstAttribute="top" secondItem="dwC-1V-aNs" secondAttribute="top" id="Urq-dN-5gZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dwC-1V-aNs"/>
