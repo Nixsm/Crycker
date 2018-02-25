@@ -17,7 +17,7 @@ class MockCoinMarketCapRepository: CoinMarketCapRepository {
         shouldReturnSucces = shouldSucceed
     }
     
-    func fetchCryptoCoins(onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?) {
+    func fetchCryptoCoins(shouldReloadCache: Bool, onSuccess: @escaping ([CryptoCoin]) -> Void, onFailure: ((String) -> Void)?) {
         if shouldReturnSucces {
             onSuccess([])
             return
